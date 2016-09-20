@@ -1,0 +1,182 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+@font-face {
+ font-family: miFuente; /* requerido */
+ src: url("../font/AvenirNextLTPro-Regular.ttf") format("truetype");                        /* requerido */
+ font-weight: weight;                /* opcional */
+ font-style: style;                /* opcional */
+}
+@font-face {
+ font-family: miFuenteNegrita; /* requerido */
+ src: url("../font/AvenirNextLTPro-Bold.ttf") format("truetype");                        /* requerido */
+ font-weight: weight;                /* opcional */
+ font-style: style;                /* opcional */
+}
+video{
+	position: fixed;/* hace que las coordenadas sean relativas a la ventana*/
+	min-width: 100%;
+	min-height: 100%;
+
+	top:50%;
+	left:50%;
+
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+
+	z-index:-100;
+	-moz-z-index:-100;
+	-webkit-z-index:-100;
+}
+header{
+	height: 40vh;
+}
+.seccionPrincipal{
+	height: 20vh;
+}
+.sitios{
+	height: 30vh;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:space-around;
+	font-family: "miFuente";
+	align-items: center;
+}
+
+footer{
+	height: 8vh;
+	/*border:1px solid red;*/
+}
+#overlay{
+	margin: 0;
+	text-align: center;
+	min-width: 100%;
+	min-height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	position: absolute;
+}
+.logoHome{
+	width: 450px;
+	margin-top:10vh;
+}
+#linea{
+	background-color: #FFF;
+	height: 1px;
+	width: 50%;
+	margin-top: 5vh;
+}
+.seccionPrincipal {
+	color: #fff;
+	font-size: 18pt;
+	font-family: "miFuente";
+}
+.fraseMenor{
+	font-size: 13pt;
+}
+.negritas{
+	font-family: "miFuenteNegrita";
+	font-size: 25pt;
+}
+.sitios a{
+	color: #fff;
+	padding: 20px;
+	border:1px solid #fff;
+	text-decoration: none;
+	font-size: 18px;
+}
+.sitios a:hover{
+	text-decoration: none;
+	color: #fff;
+	cursor: pointer;
+	background-color: rgba(184, 181, 181, .6);
+	animation-name: bordes;
+	transition-duration: 1s;
+	border-radius: 15px;
+	/*background-color: rgba(53, 133, 68, .6);*/
+}
+.derechos{
+	font-size: 10px;
+	color: #fff;
+	font-family: "miFuente";
+	margin-top: 3vh;
+}
+
+/*Mensaje a mostrar al hacer hover sobre consultora*/
+#msj{
+	display: none;
+}
+
+
+
+/* Vista en mobiles y tabletas */
+
+@media screen and (max-width:800px){
+body{
+	background-image: none;
+	background-color: #fff
+}
+.logoHome{
+	width: 70vw;
+	height: 60%;
+}
+#overlay{
+	margin: 0;
+	text-align: center;
+	position: absolute;
+	height: 100vh;
+	background-color: #fff;
+}
+header{
+	height: 30vh;
+}
+{
+	display: none !important;
+}
+.seccionPrincipal{
+	height:20vh;
+	background-color: #E1E1E1;
+}
+.seccionPrincipal p{
+		color: #535252;
+		font-size: 15px;
+		padding-top: 3vh;
+}
+.fraseMenor{
+	font-size: 12px;
+}
+.negritas{
+	font-size: 20px;
+}
+.sitios{
+	height: 35vh;
+}
+.sitios a{
+	text-decoration: none;
+}
+.sitios a:hover{
+	color: #514E4E;
+}
+.consultora{
+	width: 100vw;
+}
+.consultora a{
+	border-color: #34652F;
+	color:#34652F;
+}
+.fundacion{
+	width: 100vw;
+}
+.fundacion a{
+	border-color:#9AD805;
+	color: #9AD805;
+}
+footer{
+	height: 10vh;
+	background-color: #406838;
+}
+footer p{
+	padding-top: 3vh;
+}
+}
