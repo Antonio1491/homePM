@@ -36,12 +36,12 @@
 		<section class="sitios">
 			<!--<p id="msj">hola</p>-->
 			<div class="consultora">
-				<a id="btnConsultora" href="http://www.parquesdemexico.org/consultora" data-toggle="tooltip" title="Inf. de consultora">CONSULTORA</a>
+				<a id="btnConsultora" href="http://www.parquesdemexico.org/consultora" data-toggle="tooltip" title="Estudios, Planes Maestros y Proyectos Ejecutivos">CONSULTORA</a>
 						<!-- Botón verde
 						<button type="button" class="btn btn-success btn-lg">FUNDACIÓN</button>-->
 			</div>
 			<div class="fundacion">
-				<a id="btnFundacion" href="http://www.parquesdemexico.org/fundacion">FUNDACIÓN</a>
+				<a id="btnFundacion" href="http://www.parquesdemexico.org/fundacion" data-toggle="tooltip" title="Construcción Comunitaria">FUNDACIÓN</a>
 						<!-- Botón verde<button type="button" class="btn btn-success btn-lg" src="http://www.parquesdemexico.org">CONSULTORA</button>-->
 			</div>
 		</section>
